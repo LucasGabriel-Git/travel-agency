@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Jadoo - Travel Agency</title>
+  </head>
+  <body class="h-screen bg-slate-50">
+    <header class="fixed w-full top-0 z-50 px-24 transition-all duration-400">
+      <nav class="py-4 flex items-center justify-between">
+        <img src="./assets/images/logo.svg" alt="Logo Jadoo" />
+        <div class="flex items-center font-medium">
+          <ul class="flex items-center gap-16 text-sm">
+            <li>Destination</li>
+            <li>Hotels</li>
+            <li>Flights</li>
+            <li>Bookings</li>
+            <li>Login</li>
+            <li>
+              <a
+                class="px-4 py-2 rounded-lg border border-gray-600 hover:bg-[#ff5a5f] hover:text-white duration-200 hover:border-[#ff5a5f] text-underline"
+                href="/#"
+              >
+                Sign Up
+              </a>
+            </li>
+          </ul>
+          <select
+            class="ml-16 text-sm font-medium px-2 py-1 rounded-lg outline-none"
+          >
+            <option value="English">En</option>
+            <option value="Portuguese">Por</option>
+          </select>
+        </div>
+      </nav>
+    </header>
+    <main class="px-24 py-16">
+      <img
+        src="./assets/abstract-form.svg"
+        alt="Background image"
+        class="absolute -z-10 right-0 -top-16 w-[40%]"
+      />
+
+      <section class="mt-16 flex items-center justify-between relative">
+        <div class="w-[60%] sm:w-[350%] lg:w-[50%] flex flex-col gap-2">
+          <h4 class="text-sm font-medium text-[#DF6951] uppercase leading-8">
+            Best Destinations around the world
+          </h4>
+          <h1 class="text-5xl font-bold">
+            Travel, enjoy and live a new and full life
+          </h1>
+          <p class="text-gray-500 mt-2 xl:text-xl">
+            Built Wicket longer admire do barton vanity itself do in it.
+            Preferred to sportsmen it engrossed listening. Park gate sell they
+            west hard for the.
+          </p>
+          <div class="flex items-center justify-between mt-2 w-full sm:gap-8">
+            <button
+              class="bg-[#f1a501] lg: text-sm rounded-md shadow-sm py-3 px-3 text-white sm:w-[40%] w-full"
+            >
+              Find out more
+            </button>
+            <div class="flex items-center gap-4 sm:w-full">
+              <button class="w-10 h-10 rounded-full bg-[#df6951]">
+                <i class="bi bi-play-fill text-white"></i>
+              </button>
+              <p class="text-sm">Watch the video</p>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/images/traveller.png"
+          alt="Mulher sentada em uma mala segurando um passaporte"
+          class="w-[40%] absolute right-16 -top-16"
+        />
+      </section>
+
+      <section class="mt-16 xl:mt-80">
+        <div class="flex flex-col items-center justify-center relative">
+          <img
+            src="./assets/images/abstract-forms.svg"
+            alt="Formas em formato de cruz"
+            class="absolute w-[10%] right-0 -top-8"
+          />
+          <span class="uppercase text-gray-500 font-semibold">Category</span>
+          <h2 class="text-2xl font-medium">We Offer Best Services</h2>
+          <div class="h-1 w-16 bg-[#f1a501] mt-2"></div>
+        </div>
+      </section>
+
+      <section class="mt-16 grid grid-cols-4 gap-8">
+        <article
+          class="flex flex-col items-center justify-start border border-gray-100 hover:shadow-lg gap-3 px-8 rounded-xl bg-white py-8 transition-all duration-200 bg-white"
+        >
+          <i class="bi bi-watch text-[#DF6951] text-4xl"></i>
+          <span class="font-medium text-gray-500">Calculated Weather</span>
+          <p class="text-center text-sm font-medium">
+            Built Wicket longer admire do barton vanity itself do in it.
+          </p>
+        </article>
+        <article
+          class="flex flex-col items-center justify-start border border-gray-100 hover:shadow-lg gap-3 px-8 rounded-xl bg-white py-8 transition-all duration-200 bg-white"
+        >
+          <i class="bi bi-airplane text-[#DF6951] rotate-45 text-4xl"></i>
+          <span class="font-medium text-gray-500">Best Flights</span>
+          <p class="text-center text-sm font-medium">
+            Engrossed listening. Park gate sell they west hard for the.
+          </p>
+        </article>
+        <article
+          class="flex flex-col items-center justify-start border border-gray-100 hover:shadow-lg gap-3 px-8 rounded-xl bg-white py-8 transition-all duration-200 bg-white"
+        >
+          <i class="bi bi-mic text-[#DF6951] text-4xl"></i>
+          <span class="font-medium text-gray-500">Local Events</span>
+          <p class="text-center text-sm font-medium">
+            Barton vanity itself do in it. Preferd to men it engrossed
+            listening.
+          </p>
+        </article>
+        <article
+          class="flex flex-col items-center justify-start border border-gray-100 hover:shadow-lg gap-3 px-8 rounded-xl bg-white py-8 transition-all duration-200 z-10 bg-white"
+        >
+          <i class="bi bi-gear text-[#DF6951] text-4xl"></i>
+          <span class="font-medium text-gray-500">Customization</span>
+          <p class="text-center text-sm font-medium">
+            We deliver outsourced aviation services for military customers.
+          </p>
+        </article>
+      </section>
+
+      <section class="mt-16">
+        <div class="flex flex-col items-center justify-center">
+          <span class="uppercase text-gray-500 font-semibold">Top Selling</span>
+          <h2 class="text-2xl font-medium">Top Destinations</h2>
+          <div class="h-1 w-16 bg-[#f1a501] mt-2"></div>
+        </div>
+      </section>
+
+      <section class="mt-16 flex items-center justify-center gap-8">
+        <article
+          class="flex flex-col items-center justify-start border border-gray-1100 hover:shadow-lg gap-3 rounded-xl bg-white transition-all duration-200 bg-white w-[20%] h-[250px] overflow-hidden pb-4"
+        >
+          <img
+            src="./assets/images/destination-1.jpg"
+            alt="Cidade"
+            class="object-cover h-[70%] w-full"
+          />
+          <div class="flex items-center justify-between w-full px-4">
+            <p class="text-sm text-gray-500 font-medium">Rome, Italy</p>
+            <p class="text-sm text-gray-500 font-medium">$5,42k</p>
+          </div>
+          <div class="flex items-center gap-4 w-full px-4">
+            <i class="bi bi-cursor-fill text-[#DF6951]"></i>
+            <p class="text-sm text-gray-500 font-light">10 days trip</p>
+          </div>
+        </article>
+        <article
+          class="flex flex-col items-center justify-start border border-gray-1100 hover:shadow-lg gap-3 rounded-xl bg-white transition-all duration-200 bg-white w-[20%] h-[250px] overflow-hidden pb-4"
+        >
+          <img
+            src="./assets/images/destination-2.jpg"
+            alt="Cidade"
+            class="object-cover h-[70%] w-full"
+          />
+          <div class="flex items-center justify-between w-full px-4">
+            <p class="text-sm text-gray-500 font-medium">London, UK</p>
+            <p class="text-sm text-gray-500 font-medium">$4,2k</p>
+          </div>
+          <div class="flex items-center gap-4 w-full px-4">
+            <i class="bi bi-cursor-fill text-[#DF6951]"></i>
+            <p class="text-sm text-gray-500 font-light">12 days trip</p>
+          </div>
+        </article>
+        <article
+          class="flex flex-col items-center justify-start border border-gray-1100 hover:shadow-lg gap-3 rounded-xl bg-white transition-all duration-200 bg-white w-[20%] h-[250px] overflow-hidden pb-4"
+        >
+          <img
+            src="./assets/images/destination-3.jpg"
+            alt="Cidade"
+            class="object-cover h-[70%] w-full"
+          />
+          <div class="flex items-center justify-between w-full px-4">
+            <p class="text-sm text-gray-500 font-medium">Full Europe</p>
+            <p class="text-sm text-gray-500 font-medium">$15k</p>
+          </div>
+          <div class="flex items-center gap-4 w-full px-4">
+            <i class="bi bi-cursor-fill text-[#DF6951]"></i>
+            <p class="text-sm text-gray-500 font-light">28 days trip</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="mt-32">
+        <div class="flex flex-col relative gap-6">
+          <div class="flex flex-col">
+            <h4 class="text-sm font-medium text-gray-500">Easy and Fast</h4>
+            <h2 class="text-4xl font-medium sm:text-3xl">
+              Book your next trip in 3 easy steps
+            </h2>
+          </div>
+          <div class="flex flex-col gap-2 w-[50%] space-y-10 sm:space-y-4">
+            <div class="flex items-center gap-4">
+              <img src="./assets/images/icon-1.svg" alt="Icon Group" />
+              <div class="flex flex-col">
+                <h3 class="text-md font-medium">Choose Destination</h3>
+                <p class="text-sm text-gray-500">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Aperiam aliquid voluptatem excepturi illum dolores quos ipsam.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <img src="./assets/images/icon-2.svg" alt="Icon Group" />
+              <div class="flex flex-col">
+                <h3 class="text-md font-medium">Make Payment</h3>
+                <p class="text-sm text-gray-500">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Aperiam aliquid voluptatem excepturi illum dolores quos ipsam.
+                </p>
+              </div>
+            </div>
+            <div class="flex items-center gap-4">
+              <img src="./assets/images/icon-3.svg" alt="Icon Group" />
+              <div class="flex flex-col">
+                <h3 class="text-md font-medium">
+                  Reach Airport on Selected Date
+                </h3>
+                <p class="text-sm text-gray-500">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Aperiam aliquid voluptatem excepturi illum dolores quos ipsam.
+                </p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./assets/images/grouped-image.png"
+            class="absolute -right-8 -top-48 sm:-top-16 sm:w-[45%] xl:w-[35%] z-[-1]"
+          />
+        </div>
+      </section>
+
+      <section class="mt-32 w-full">
+        <div class="flex flex-col relative gap-6 w-full">
+          <div class="flex flex-col xl:w-[60%]">
+            <h4 class="text-sm font-medium text-gray-500">Testimonials</h4>
+            <h2 class="text-4xl font-medium sm:text-3xl">
+              What People Say About Us
+            </h2>
+          </div>
+          <div class="flex items-center gap-12 w-full">
+            <div
+              class="flex flex-col gap-4 xl:w-[30%] border border-gray-200 px-2 py-4 hover:shadow-md transition-all duration-200 rounded-xl bg-white"
+            >
+              <p class="text-sm text-gray-500">
+                <q>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                  ut eaque aut libero accusantium deleniti aliquid, repellendus
+                  nulla repudiandae consequuntur ea perspiciatis, eos numquam
+                  quisquam a natus. Recusandae, labore rerum.</q
+                >
+              </p>
+              <div class="flex items-center gap-4">
+                <img
+                  src="./assets/images/profile.png"
+                  alt="Profile Image"
+                  class="w-10"
+                />
+                <div class="flex flex-col">
+                  <span class="text-lg font-medium">Mike Taylor</span>
+                  <p class="text-gray-500 text-sm">CEO Takaful</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col gap-4 xl:w-[30%] border border-gray-200 px-2 py-4 hover:shadow-md transition-all duration-200 rounded-xl bg-white"
+            >
+              <p class="text-sm text-gray-500">
+                <q>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                  ut eaque aut libero accusantium deleniti aliquid, repellendus
+                  nulla repudiandae consequuntur ea perspiciatis, eos numquam
+                  quisquam a natus. Recusandae, labore rerum.</q
+                >
+              </p>
+              <div class="flex items-center gap-4">
+                <img
+                  src="./assets/images/profile.png"
+                  alt="Profile Image"
+                  class="w-10"
+                />
+                <div class="flex flex-col">
+                  <span class="text-lg font-medium">Mike Taylor</span>
+                  <p class="text-gray-500 text-sm">CEO Takaful</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex flex-col gap-4 xl:w-[30%] border border-gray-200 px-2 py-4 hover:shadow-md transition-all duration-200 rounded-xl bg-white"
+            >
+              <p class="text-sm text-gray-500">
+                <q>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+                  ut eaque aut libero accusantium deleniti aliquid, repellendus
+                  nulla repudiandae consequuntur ea perspiciatis, eos numquam
+                  quisquam a natus. Recusandae, labore rerum.</q
+                >
+              </p>
+              <div class="flex items-center gap-4">
+                <img
+                  src="./assets/images/profile.png"
+                  alt="Profile Image"
+                  class="w-10"
+                />
+                <div class="flex flex-col">
+                  <span class="text-lg font-medium">Mike Taylor</span>
+                  <p class="text-gray-500 text-sm">CEO Takaful</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-32">
+        <div class="flex flex-col items-center justify-center space-y-4">
+          <h2 class="text-2xl font-medium sm:text-3xl">Our Clients</h2>
+          <div class="h-1 w-16 bg-[#f1a501]"></div>
+
+          <div
+            class="flex items-center justify-center gap-8 w-full bg-white px-6 rounded-xl mt-6"
+          >
+            <img src="./assets/images/logo-1.svg" class="w-[20%]" />
+            <img src="./assets/images/logo-2.svg" class="w-[20%]" />
+            <img src="./assets/images/logo-3.svg" class="w-[20%]" />
+            <img src="./assets/images/logo-4.svg" class="w-[20%]" />
+            <img src="./assets/images/logo-5.svg" class="w-[20%]" />
+          </div>
+        </div>
+      </section>
+
+      <section class="mt-32 relative">
+        <span
+          class="absolute -top-4 -right-4 rounded-full w-10 h-10 bg-[linear-gradient(180deg,#747DEF_0%,#5E3BE1_100%)] flex items-center justify-center z-10"
+        >
+          <i class="bi bi-cursor-fill text-white"></i>
+        </span>
+        <div
+          class="flex flex-col bg-[#DFD7F9]/50 rounded-tl-[4rem] px-8 py-4 relative rounded-md overflow-hidden"
+        >
+          <div>
+            <p class="text-center text-[#5E6282] py-8 font-semibold leading-8">
+              Subscribe to get information, latest news and other interesting
+              offers about Jadoo
+            </p>
+
+            <div class="flex items-center gap-4 mx-auto w-[60%] mb-8">
+              <div class="relative w-full">
+                <input
+                  class="w-full bg-white rounded-lg pl-10 py-2 outline-none"
+                  text-sm
+                  type="email"
+                  placeholder="Your Email"
+                />
+                <i
+                  class="bi bi-envelope absolute top-1/2 -translate-y-1/2 left-3 text-gray-400"
+                ></i>
+              </div>
+              <button
+                class="bg-[#f1a501] text-sm rounded-md shadow-sm py-2.5 px-2 text-white hover:shadow-lg transition-all duration-200"
+              >
+                Subscribe
+              </button>
+            </div>
+            <img
+              src="./assets/images/fill-sphere.svg"
+              alt="Sphere"
+              class="absolute -left-64 -z-10 -top-6"
+            />
+          </div>
+        </div>
+      </section>
+
+      <footer class="mt-32">
+        <div class="flex justify-between gap-5">
+          <div class="flex flex-col gap-4 w-[50%]">
+            <img
+              src="./assets/images/logo.svg"
+              alt="Logo"
+              class="w-24 sm:w-32"
+            />
+            <p class="text-gray-500 mt-4 font-medium text-xs">
+              Book your trip in minute, get full Control for much longer.
+            </p>
+          </div>
+          <div class="flex flex-col w-[40%]">
+            <h1 class="text-lg font-bold">Company</h1>
+            <a class="text-gray-500 mt-4 font-medium text-underline" href="#"
+              >About</a
+            >
+            <a class="text-gray-500 mt-4 font-medium text-underline" href="#"
+              >Careers</a
+            >
+            <a class="text-gray-500 mt-4 font-medium text-underline" href="#"
+              >Mobile</a
+            >
+          </div>
+          <div class="flex flex-col w-[40%]">
+            <h1 class="text-lg font-bold">Contact</h1>
+            <p class="text-gray-500 mt-4 font-medium">Help/FAQ</p>
+            <p class="text-gray-500 mt-4 font-medium">Press</p>
+            <p class="text-gray-500 mt-4 font-medium">Affiliates</p>
+          </div>
+          <div class="flex flex-col w-[40%]">
+            <h1 class="text-lg font-bold">More</h1>
+            <a class="text-gray-500 mt-4 font-medium" href="#">Airlinefees</a>
+            <a class="text-gray-500 mt-4 font-medium" href="#">Airline</a>
+            <a class="text-gray-500 mt-4 font-medium" href="#">Low fare tips</a>
+          </div>
+          <div class="flex items-center flex-col gap-2">
+            <div class="flex items-center gap-6">
+              <button
+                class="bg-white w-10 h-10 rounded-full hover:shadow-md transition-all duration-150 group"
+              >
+                <i
+                  class="bi bi-facebook text-gray-500 group-hover:text-[#0C8C99]"
+                ></i>
+              </button>
+              <button
+                class="bg-white w-10 h-10 rounded-full hover:shadow-md transition-all duration-150 group"
+              >
+                <i
+                  class="bi bi-instagram text-gray-500 group-hover:text-red-500"
+                ></i>
+              </button>
+              <button
+                class="bg-white w-10 h-10 rounded-full hover:shadow-md transition-all duration-150 group"
+              >
+                <i
+                  class="bi bi-twitter text-black group-hover:text-[#0C8CE9]"
+                ></i>
+              </button>
+            </div>
+            <div class="flex items-center gap-6 mt-4 w-[350px]">
+              <button
+                class="flex items-center gap-4 bg-black w-full px-3 py-2 rounded-md"
+              >
+                <i class="bi bi-google-play text-white"></i>
+                <p class="text-white text-xs"><b>Get it on</b> Google Play</p>
+              </button>
+              <button
+                class="flex items-center gap-4 bg-black w-full px-3 py-2 rounded-md"
+              >
+                <i class="bi bi-apple text-white"></i>
+                <p class="text-white text-xs">
+                  <b>Available on the</b> Apple Store
+                </p>
+              </button>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="./js/script.js"></script>
+    </main>
+  </body>
+</html>
